@@ -1,0 +1,15 @@
+{
+    "name": "Weather App",
+    "version": "1.0.0",
+    "description": "Weather",
+    "manifest_version": 3,
+    "author": "Jesse & Joseph",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Weather"
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "storage"
+    ]
+}

@@ -1,0 +1,39 @@
+@font-face{
+    font-family: Shrek;
+    src:url(shrek-2.ttf);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px; /* max: 1000px */
+    height: 480px; /* max: 750px */
+    font-size: large;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    
+}
+
+#weather-pic {
+    width: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+#shrekBox {
+    display: flex;
+}
+
+#shrek {
+    width: 100px;
+}
+
+#shrekWords {
+    width: 200px;
+    background: white;
+    border-radius: 5px;
+    margin: 20px;
+}
