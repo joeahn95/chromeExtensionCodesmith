@@ -68,7 +68,7 @@ chrome.storage.sync.get(['city'], function(data) {
             shrekVoice = document.querySelector('#shrekHot');
         }
 
-        shrekVoice.play();
+        setTimeout(() => shrekVoice.play(), 2000)
 
       })
       .catch((error) => console.log(error));
