@@ -56,13 +56,19 @@ chrome.storage.sync.get(['city'], function(data) {
 
         // set shreks words
         const shrekWords = document.querySelector('#shrekWords');
+        let shrekVoice;
         if (data.current.temp_f < 50) {
             shrekWords.innerHTML = 'brr pretty chilly, put on my vest';
+            shrekVoice = document.querySelector('#shrekCold');
         } else if (data.current.temp_f < 80) {
             shrekWords.innerHTML = 'perfect day in the swamp to take Fiona out';
+            shrekVoice = document.querySelector('#shrekWarm');
         } else {
-            shrekWords.innerHTML = 'So hot, Stop breathing fire on me Elizabeth';
+            shrekWords.innerHTML = 'So hot, probably the fire breathing dragon again';
+            shrekVoice = document.querySelector('#shrekHot');
         }
+
+        shrekVoice.play();
 
       })
       .catch((error) => console.log(error));
